@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+    <title>Computer History Trivia Game</title>
+</head>
+<body>
+    <div class="container">
+        <br>
+        <h1>Computer History Trivia Game</h1>
+        <hr> 
+        <div id="time-box" class="panel panel-default">
+            <div class="panel-body"><h1>0:00</h1></div>
+        </div>
+        <div class="row question" id="q1" data-ans="Claude Shannon">
+            <p>Who is considered the father of information theory?</p>
+        </div>
+        <div class="row answers">
+            <label class="radio-inline"><input type="radio" name="q1radio" checked> Isaac Newton </label>
+            <label class="radio-inline"><input type="radio" name="q1radio"> Neil Patrick Harris </label>
+            <label class="radio-inline"><input type="radio" name="q1radio"> Claude Shannon </label>
+            <label class="radio-inline"><input type="radio" name="q1radio"> John Von Neumann </label>    
+        </div> 
+        <br>
+        <div class="row question" id="q2" data-ans="Ada Lovelace">
+            <p>Who wrote the first computer program?</p>   
+        </div>
+        <div class="row answers">
+            <label class="radio-inline"><input type="radio" name="q2radio" checked> Santa Claus</label>
+            <label class="radio-inline"><input type="radio" name="q2radio"> Ada Lovelace</label>
+            <label class="radio-inline"><input type="radio" name="q2radio"> Grace Hopper</label>
+            <label class="radio-inline"><input type="radio" name="q2radio"> Charles Babbage</label>    
+        </div> 
+        <br>
+        <div class="row question" id="q3" data-ans="Edsgar Dijkstra">
+            <p>Who wrote the first shortest path algorithm with polynomial efficiency?</p>
+        </div>
+        <div class="row answers">
+            <label class="radio-inline"><input type="radio" name="q3radio" checked> Donald Knuth</label>
+            <label class="radio-inline"><input type="radio" name="q3radio"> Edsgar Dijkstra</label>
+            <label class="radio-inline"><input type="radio" name="q3radio"> Jean Claude Van Damme</label>
+            <label class="radio-inline"><input type="radio" name="q3radio"> Steve Wozniak</label>    
+        </div> 
+        <br>
+        <div class="row question" id="q5" data-ans="C">
+            <p>Which of these languages is not object oriented?</p>
+        </div>
+        <div class="row answers">
+            <label class="radio-inline"><input type="radio" name="q4radio" checked> C++</label>
+            <label class="radio-inline"><input type="radio" name="q4radio"> Javascript</label>
+            <label class="radio-inline"><input type="radio" name="q4radio"> C</label>
+            <label class="radio-inline"><input type="radio" name="q4radio"> Java</label>    
+        </div> 
+        <br>
+        <div class="row question" id="q6" data-ans="Dennis Ritchie and Ken Thompson">
+            <p>Who wrote UNIX?</p>
+        </div>
+        <div class="answers">
+            <label class="radio-inline"><input type="radio" name="q5radio" checked> Linus Torvalds</label>
+            <label class="radio-inline"><input type="radio" name="q5radio"> Steve Wozniak</label>
+            <label class="radio-inline"><input type="radio" name="q5radio"> Kylie and Kendall Jenner</label> 
+            <label class="radio-inline"><input type="radio" name="q5radio"> Ken Thompson</label>
+        </div> 
+        <br>
+        <a role="button" href="summary.html" class="btn btn-primary btn-lg btn-block">
+            <p>Submit Answers</p>
+        </a>
+        <button class="btn btn-secondary btn-lg btn-block">
+            <p>More Time</p>
+        </button>
+        <br><br><br>
+        <footer class="fixed-bottom">
+                Copyright &copy; Irving Rivas 2018
+        </footer>
+    </div>
+</body>
+</html>
