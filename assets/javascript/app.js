@@ -20,7 +20,7 @@ $(document).ready(function() {
                 ++score;
             }
         }
-        console.log(score);å
+        console.log(score);
         window.location.href = "summary.html";
         $("#score-report").append("<br><h1 class='lead'>You scored " + score + " out of 5.</h1>");
     }
