@@ -21,8 +21,12 @@ $(document).ready(function() {
             }
         }
         console.log(score);
-        window.location.href = "summary.html";
-        $("#score-report").append("<br><h1 class='lead'>You scored " + score + " out of 5.</h1>");
+        document.body.innerHTML = "<div class='container'>" +
+        "<br><h1>Computer History Trivia Game</h1><hr>" + 
+        "<div class='jumbotron'> <h1 id='score-report' class='display-4'>Results:</h1><br>" +
+        "<br><h1 class='lead'>You scored " + score + " out of 5.</h1>" +
+        "<p class='lead'><a class='btn btn-primary btn-lg' href='index.html' role='button'>Play Again</a></p>" +
+        "</div></div>"
     }
 
     function timeConverter(t) {
