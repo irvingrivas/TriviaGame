@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
 
-    var game_duration = 10;
+    var game_duration = 30;
     var intervalId;
     var score = 0;
 
