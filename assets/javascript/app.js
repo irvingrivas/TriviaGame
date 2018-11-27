@@ -46,8 +46,8 @@ $(document).ready(function () {
     }
 
     function decrement() {
-        $("#time-box").html("<h1>" + timeConverter(game_duration) + "</h1>")
         game_duration--;
+        $("#time-box").html("<h1>" + timeConverter(game_duration) + "</h1>")
         if (game_duration === 0) {
             stop();
         }
