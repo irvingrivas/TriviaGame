@@ -5,12 +5,12 @@ $(document).ready(function () {
     var intervalId;
     var score = 0;
 
-    $("#begin-game").click(function () {
-        function run() {
-            clearInterval(intervalId);
-            intervalId = setInterval(decrement, 1000);
-        }
-    })
+    $("#begin-button").click(run());
+
+    function run() {
+        clearInterval(intervalId);
+        intervalId = setInterval(decrement, 1000);
+    }
 
     function stop() {
         clearInterval(intervalId);
@@ -46,8 +46,8 @@ $(document).ready(function () {
     }
 
     function decrement() {
+        $("#time-box").html("<h1>" + timeConverter(game_duration) + "</h1>")
         game_duration--;
-        $("#time-box").html("<h1>" + timeConverter(game_duration) + "</h1>");
         if (game_duration === 0) {
             stop();
         }
@@ -61,5 +61,4 @@ $(document).ready(function () {
         stop();
     });
 
-    run();
 });
