@@ -1,14 +1,16 @@
 
-$(document).ready(function() {
+$(document).ready(function () {
 
     var game_duration = 30;
     var intervalId;
     var score = 0;
 
-    function run() {
-        clearInterval(intervalId);
-        intervalId = setInterval(decrement, 1000);
-    }
+    $("#begin-game").click(function () {
+        function run() {
+            clearInterval(intervalId);
+            intervalId = setInterval(decrement, 1000);
+        }
+    })
 
     function stop() {
         clearInterval(intervalId);
@@ -22,23 +24,23 @@ $(document).ready(function() {
         }
         console.log(score);
         document.body.innerHTML = "<div class='container'>" +
-        "<br><h1>Computer History Trivia Game</h1><hr>" + 
-        "<div class='jumbotron'><h1 id='score-report' class='display-4'>Results:</h1>" +
-        "<br><h1 class='lead'>You scored " + score + " out of 5.</h1><br>" +
-        "<p class='lead'><a class='btn btn-primary btn-lg' href='index.html' role='button'>Play Again</a></p>" +
-        "</div></div>"
+            "<br><h1>Computer History Trivia Game</h1><hr>" +
+            "<div class='jumbotron'><h1 id='score-report' class='display-4'>Results:</h1>" +
+            "<br><h1 class='lead'>You scored " + score + " out of 5.</h1><br>" +
+            "<p class='lead'><a class='btn btn-primary btn-lg' href='index.html' role='button'>Play Again</a></p>" +
+            "</div></div>"
     }
 
     function timeConverter(t) {
         var minutes = Math.floor(t / 60);
         var seconds = t - (minutes * 60);
         if (seconds < 10) {
-        seconds = "0" + seconds;
+            seconds = "0" + seconds;
         }
         if (minutes === 0) {
-        minutes = "00";
+            minutes = "00";
         } else if (minutes < 10) {
-        minutes = "0" + minutes;
+            minutes = "0" + minutes;
         }
         return minutes + ":" + seconds;
     }
@@ -51,11 +53,11 @@ $(document).ready(function() {
         }
     }
 
-    $("#more-time").on("click", function() {
+    $("#more-time").on("click", function () {
         game_duration += 15;
     });
 
-    $("#submit-answers").on("click", function() {
+    $("#submit-answers").on("click", function () {
         stop();
     });
 
