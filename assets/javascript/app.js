@@ -28,7 +28,7 @@ $(document).ready(function () {
             "<div class='jumbotron'><h1 id='score-report' class='display-4'>Results:</h1>" +
             "<br><h1 class='lead'>You scored " + score + " out of 5.</h1><br>" +
             "<p class='lead'><a class='btn btn-primary btn-lg' href='index.html' role='button'>Play Again</a></p>" +
-            "</div></div>"
+            "</div><br><br><br><footer class='fixed-bottom'>Copyright &copy; Irving Rivas 2018</footer></div>"
     }
 
     function timeConverter(t) {
